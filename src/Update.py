@@ -1,11 +1,11 @@
 import sys
-import src.helpers.CoinHelper as CoinHelper
+import src.controllers.CoinController as CoinHelper
 
 update_cmd = sys.argv[(sys.argv.index('update') + 1)]
 
 if update_cmd == 'all':
 
-	from src import Init
+	pass
 
 elif update_cmd == 'trending':
 

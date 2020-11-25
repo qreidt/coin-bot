@@ -1,6 +1,6 @@
 import pandas as pd
 import os, time
-import src.helpers.CoinHelper as CoinHelper
+import src.controllers.CoinController as CoinController
 from env import COINS_PATH, API_AWAIT_TIME
 from pycoingecko import CoinGeckoAPI
 
@@ -23,8 +23,8 @@ for i, coin in coins.iterrows():
 	if not already_exists:
 		os.mkdir(coin['path'])
 
-		CoinHelper.writeInfo(coin)
+		CoinController.writeInfo(coin)
 
-	CoinHelper.writeMarketHistory(coin)
-	CoinHelper.writeOHLC(coin)
+	CoinController.writeMarketHistory(coin)
+	CoinController.writeOHLC(coin)
 	print(str(i+1) + '/' + str(len(coins)) + ' | ' + coin['name'])
