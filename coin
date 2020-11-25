@@ -1,0 +1,18 @@
+import sys
+
+
+def init():
+    from src import Init
+
+
+def analize():
+    from src import Analize
+
+
+args = sys.argv
+
+if 'init' in args:
+    init()
+
+if 'analize' in args:
+    analize()

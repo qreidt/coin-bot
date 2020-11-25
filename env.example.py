@@ -1,0 +1,7 @@
+
+DATA_PATH = './data/'
+COINS_PATH = DATA_PATH + 'coins/'
+
+BASE_CURRENCY = 'brl'
+API_AWAIT_TIME = 60 / 100 + 0.5
+API_ERROR_AWAIT_TIME = (60 / 100 + 0.5) * 2
