@@ -1,0 +1,11 @@
+name: coin-bot
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - numpy
+  - pandas
+  - pip
+  - pip:
+      - pycoingecko
+      - moment

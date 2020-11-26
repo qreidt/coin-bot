@@ -11,6 +11,8 @@ coins = pd.DataFrame(cg.get_coins_list())
 coins['path'] = coins['id'].map(lambda x: COINS_PATH + x + '/')
 coins.to_csv('./data/coins.csv', sep=';', index=False)
 
+CoinController.writeTrending()
+
 time.sleep(API_AWAIT_TIME)
 
 if not os.path.exists(COINS_PATH):
